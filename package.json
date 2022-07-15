@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "lerna": "lerna",
+    "setup": "docker-compose up -d && lerna bootstrap",
+    "start:api": "lerna run --stream --scope @strategicfolio/api start",
+    "start:app": "lerna run --stream --scope @strategicfolio/app start",
+    "start:common": "lerna run --stream --scope @strategicfolio/common start",
+    "start": "concurrently \"npm run start:api\" \"npm run start:app\" \"npm run start:common\"",
+    "migration:generate": "lerna run --stream --scope @strategicfolio/api migration:generate --",
+    "migration:revert": "lerna run --stream --scope @strategicfolio/api migration:revert",
+    "migration:run": "lerna run --stream --scope @strategicfolio/api migration:run"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "lerna": "^5.1.7"
+  }
+}

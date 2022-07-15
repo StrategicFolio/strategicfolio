@@ -1,0 +1,24 @@
+{
+  "name": "@strategicfolio/crawler",
+  "version": "0.0.0",
+  "homepage": "https://github.com/StrategicFolio/strategicfolio#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StrategicFolio/strategicfolio.git"
+  },
+  "scripts": {
+    "start": "nodemon src/index.ts"
+  },
+  "dependencies": {
+    "@strategicfolio/common": "^0.0.0",
+    "ethers": "^5.6.9",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.5",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.2"
+  }
+}

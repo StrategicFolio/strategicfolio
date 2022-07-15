@@ -1,0 +1,14 @@
+{
+  "name": "@strategicfolio/common",
+  "version": "0.0.0",
+  "license": "ISC",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "rm -rf lib && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
